@@ -21,7 +21,9 @@ write_sheet = write_xls_workbook.add_sheet("Test")
 for i in range(0,10):
     if i == 3:
         write_sheet.write(i, 0, "")
+    elif i == 8:
+        write_sheet.write(i, 0, None)
     else:
-        write_sheet.write(i,0,i)
+        write_sheet.write(i, 0, i)
 
 write_xls_workbook.save("Test.xls")

@@ -17,7 +17,7 @@ def get_xlsx_rows_equal_xls(source_xls,source_sheet,target_xlsx,target_sheet,sav
 
     xlsx_workbook.save(save_xlsx)
 
-def copy_xls_to_xlsx(source_xls,source_sheet,source_column,target_xlsx,target_sheet,target_column):
+def copy_xls_to_xlsx(source_xls,source_sheet,source_column,target_xlsx,target_sheet,target_column,target_start):
     xls_workbook = xlrd.open_workbook(source_xls)
     xls_sheet = xls_workbook.sheet_by_name(source_sheet)
     print(xls_sheet.nrows)
@@ -35,18 +35,39 @@ def copy_xls_to_xlsx(source_xls,source_sheet,source_column,target_xlsx,target_sh
 
     for index, value in enumerate(source):
         print(index, value)
-        row = index + 2
+        row = index + target_start
         print(row)
         print(target_column)
         # xlsx_sheet.cell(row ,1,value)
         # xlsx_sheet['A'+f'{row}'].value = value
-        xlsx_sheet[f'{target_column}{row}'].value = value
+        print(f'{target_column}{row}')
+        if value == "":
+            xlsx_sheet[f'{target_column}{row}'].value = None
+        else:
+            xlsx_sheet[f'{target_column}{row}'].value = value
     xlsx_workbook.save(target_xlsx)
 
 
 
 
 get_xlsx_rows_equal_xls("1.xls","Sheet1","草稿-2WXX20240826.xlsx","Sheet0","Python-草稿-2WXX20240826.xlsx",2)
+
+file = open("PDraft.txt", "r", encoding="UTF-8")
+for line in file.readlines():
+    if "#" not in line:
+        print(line)
+        print(line.split(",")[0])
+        print(line.split(",")[1])
+        print(line.split(",")[2])
+        print(line.split(",")[3])
+        print(line.split(",")[4])
+        print(line.split(",")[5])
+        #print(line.split(",")[5].replace("\n",""))
+        print(line.split(",")[6])
+        copy_xls_to_xlsx(line.split(",")[0], line.split(",")[1], int(line.split(",")[2]), line.split(",")[3], line.split(",")[4], line.split(",")[5],int(line.split(",")[6]))
+
+
+"""  
 #SKU
 copy_xls_to_xlsx("1.xls","Sheet1",0,"Python-草稿-2WXX20240826.xlsx","Sheet0","A")
 #父SKU 单属性不用复制
@@ -93,3 +114,4 @@ copy_xls_to_xlsx("1.xls","Sheet1",28,"Python-草稿-2WXX20240826.xlsx","Sheet0",
 copy_xls_to_xlsx("1.xls","Sheet1",29,"Python-草稿-2WXX20240826.xlsx","Sheet0","BI")
 #代理链接100*100缩率图
 copy_xls_to_xlsx("1.xls","Sheet1",30,"Python-草稿-2WXX20240826.xlsx","Sheet0","BJ")
+"""
