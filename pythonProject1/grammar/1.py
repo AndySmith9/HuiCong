@@ -3,9 +3,9 @@
 int,float,complex数值,字符串,bool,这些数据类型使用
 '''
 print("Hello,Python!-----------------")
-int1=1
-float1=1.1
-complex1=1+2j    #complex中j不能换成其它的
+int1 = 1
+float1 = 1.1
+complex1 = 1+2j    #complex中j不能换成其它的
 str1="Hello Andy"
 str2="Hello \
 Andy"      #\,一行分多行写,结果显示还是一行

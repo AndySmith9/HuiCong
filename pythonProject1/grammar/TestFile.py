@@ -5,7 +5,14 @@ def get_file_name(folderPath,key):
         if key in file:
             return file
 
-print(get_file_name("D:\\店铺产品-jishunzen1@163.com\\20241212","库存"))
+# print(get_file_name("D:\\店铺产品-jishunzen1@163.com\\20241212","库存"))
+
+
+readFile = open("test.txt","r")
+lines = readFile.readlines()
+for line in lines:
+    print(line.split()[0])
+    print(type(line.split()[0]))
 
 
 

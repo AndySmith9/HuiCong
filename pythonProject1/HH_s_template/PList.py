@@ -11,7 +11,7 @@ def get_xlsx_equal_rows_xlsx(source_xlsx,source_sheet,target_xlsx,target_sheet,s
     length = target_sheet1.max_row - start + 1
     target_sheet1.delete_rows(start, length)
     target_workbook.save(save_xlsx)
-def copy_xlsx_to_xlsx(source_file,source_sheet,source_column,target_file,target_sheet,target_column):
+def copy_xlsx_to_xlsx(source_file,source_sheet,source_column,target_file,target_sheet,target_column,target_start):
     source_workbook = openpyxl.load_workbook(source_file, data_only=True)
     print(source_workbook.sheetnames)
     source_worksheet1 = source_workbook[source_sheet]
@@ -25,7 +25,7 @@ def copy_xlsx_to_xlsx(source_file,source_sheet,source_column,target_file,target_
     target_sheet1 = target_workbook[target_sheet]
     for index, value in enumerate(source):
         print(value)
-        target_sheet1[f'{target_column}' + str(index + 7)].value = value
+        target_sheet1[f'{target_column}' + str(index + target_start)].value = value
     target_workbook.save(target_file)
 
 
@@ -35,7 +35,21 @@ openpyxl提供的delete_rows函数,只能清除行内容,不能删除行.被清�
 草稿表xlsx是xls转化来的
 """
 
+readFile = open("PList.txt", "r", encoding="UTF-8")
+for line in readFile.readlines():
+    if "#" not in line:
+        print(line)
+        print(line.split(",")[0])
+        print(line.split(",")[1])
+        print(line.split(",")[2])
+        print(line.split(",")[3])
+        print(line.split(",")[4])
+        print(line.split(",")[5])
+        print(line.split(",")[6])
+        copy_xlsx_to_xlsx(line.split(",")[0], line.split(",")[1], line.split(",")[2], line.split(",")[3], line.split(",")[4], line.split(",")[5], int(line.split(",")[6]))
 
+
+"""    
 #自定义SKU - SKU
 copy_xlsx_to_xlsx("Python-草稿-2WXX20240826.xlsx","Sheet0",'F',"Python-上架表-2WXX20240826.xlsx","Clothing","D")
 #上架标题 - Product Name
@@ -90,7 +104,7 @@ copy_xlsx_to_xlsx("Python-草稿-2WXX20240826.xlsx","Sheet0",'AJ',"Python-上架
 copy_xlsx_to_xlsx("Python-草稿-2WXX20240826.xlsx","Sheet0",'F',"Python-上架表-2WXX20240826.xlsx","Clothing","EN")
 #代理链接100*100缩率图(Formula) - Swatch Image URL
 copy_xlsx_to_xlsx("Python-草稿-2WXX20240826.xlsx","Sheet0",'BK',"Python-上架表-2WXX20240826.xlsx","Clothing","ER")
-
+"""
 
 
 

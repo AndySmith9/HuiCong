@@ -13,12 +13,18 @@ def replace_key(sourceFile,sourceSheet,targetFile,targetSheet):
         print(source_sheet.cell(1, i).value, source_sheet.cell(8, i).value)
         start = source_sheet.cell(1, i).value
         while start <= source_sheet.cell(8, i).value:
-            target_sheet["BN"f"{start}"].value = source_sheet.cell(2, i).value
-            target_sheet["AA"f"{start}"].value = source_sheet.cell(3, i).value
-            target_sheet["AB"f"{start}"].value = source_sheet.cell(4, i).value
-            target_sheet["AC"f"{start}"].value = source_sheet.cell(5, i).value
-            target_sheet["AD"f"{start}"].value = source_sheet.cell(6, i).value
-            target_sheet["AE"f"{start}"].value = source_sheet.cell(7, i).value
+            if source_sheet.cell(2, i).value != None:
+                target_sheet["BN"f"{start}"].value = source_sheet.cell(2, i).value
+            if source_sheet.cell(3, i).value != None:
+                target_sheet["AA"f"{start}"].value = source_sheet.cell(3, i).value
+            if source_sheet.cell(4, i).value != None:
+                target_sheet["AB"f"{start}"].value = source_sheet.cell(4, i).value
+            if source_sheet.cell(5, i).value != None:
+                target_sheet["AC"f"{start}"].value = source_sheet.cell(5, i).value
+            if source_sheet.cell(6, i).value != None:
+                target_sheet["AD"f"{start}"].value = source_sheet.cell(6, i).value
+            if source_sheet.cell(7, i).value != None:
+                target_sheet["AE"f"{start}"].value = source_sheet.cell(7, i).value
             start = start + 1
 
     target_workbook.save(targetFile)
