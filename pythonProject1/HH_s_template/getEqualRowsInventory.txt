@@ -1,0 +1,8 @@
+#库存
+Python-草稿-2WXX20240826.xlsx,Sheet0,库存-2WXX20240826.xlsx,ExampleSheet,3,Python-库存-2WXX20240826.xlsx
+#运费
+Python-草稿-2WXX20240826.xlsx,Sheet0,运费-2WXX20240826.xlsx,Precise Delivery,7,Python-运费-2WXX20240826.xlsx
+#促销
+Python-草稿-2WXX20240826.xlsx,Sheet0,促销-2WXX20240826.xlsx,Price & Promotion,7,Python-促销-2WXX20240826.xlsx
+#Lag-Time
+Python-草稿-2WXX20240826.xlsx,Sheet0,Lag-Time-2WXX20240826.xlsx,Sheet1,3,Python-Lag-Time-2WXX20240826.xlsx
