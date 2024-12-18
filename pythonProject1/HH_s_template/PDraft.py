@@ -50,7 +50,23 @@ def copy_xls_to_xlsx(source_xls,source_sheet,source_column,target_xlsx,target_sh
 
 
 
-get_xlsx_rows_equal_xls("1.xls","Sheet1","草稿-2WXX20240826.xlsx","Sheet0","Python-草稿-2WXX20240826.xlsx",2)
+# get_xlsx_rows_equal_xls("1.xls","Sheet1","草稿-2WXX20240826.xlsx","Sheet0","Python-草稿-2WXX20240826.xlsx",2)
+
+getEqualRowsDraft = open("getEqualRowsDraft.txt","r",encoding="UTF-8")
+
+for line1 in getEqualRowsDraft.readlines():
+    if "#" not in line1:
+        print(line1)
+        print(line1.split(",")[0])
+        print(line1.split(",")[1])
+        print(line1.split(",")[2])
+        print(line1.split(",")[3])
+        print(line1.split(",")[4])
+        print(int(line1.split(",")[5]))
+        get_xlsx_rows_equal_xls(line1.split(",")[0], line1.split(",")[1], line1.split(",")[2], line1.split(",")[3], line1.split(",")[4], int(line1.split(",")[5]))
+
+getEqualRowsDraft.close()
+
 
 file = open("PDraft.txt", "r", encoding="UTF-8")
 for line in file.readlines():
@@ -65,6 +81,8 @@ for line in file.readlines():
         #print(line.split(",")[5].replace("\n",""))
         print(line.split(",")[6])
         copy_xls_to_xlsx(line.split(",")[0], line.split(",")[1], int(line.split(",")[2]), line.split(",")[3], line.split(",")[4], line.split(",")[5],int(line.split(",")[6]))
+
+file.close()
 
 
 """  

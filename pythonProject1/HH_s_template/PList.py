@@ -29,11 +29,20 @@ def copy_xlsx_to_xlsx(source_file,source_sheet,source_column,target_file,target_
     target_workbook.save(target_file)
 
 
-get_xlsx_equal_rows_xlsx("Python-草稿-2WXX20240826.xlsx","Sheet0","上架表-2WXX20240826.xlsx","Clothing","Python-上架表-2WXX20240826.xlsx",7)
+# get_xlsx_equal_rows_xlsx("Python-草稿-2WXX20240826.xlsx","Sheet0","上架表-2WXX20240826.xlsx","Clothing","Python-上架表-2WXX20240826.xlsx",7)
 """
 openpyxl提供的delete_rows函数,只能清除行内容,不能删除行.被清除行内容的行,还是会被max_row统计到 ?
 草稿表xlsx是xls转化来的
 """
+
+getEqualRowsList = open("getEqualRowsList.txt","r",encoding="UTF-8")
+for line1 in getEqualRowsList.readlines():
+    if "#" not in line1:
+        print(line1)
+        get_xlsx_equal_rows_xlsx(line1.split(",")[0], line1.split(",")[1], line1.split(",")[2], line1.split(",")[3], line1.split(",")[4], int(line1.split(",")[5]))
+getEqualRowsList.close()
+
+
 
 readFile = open("PList.txt", "r", encoding="UTF-8")
 for line in readFile.readlines():
@@ -47,7 +56,7 @@ for line in readFile.readlines():
         print(line.split(",")[5])
         print(line.split(",")[6])
         copy_xlsx_to_xlsx(line.split(",")[0], line.split(",")[1], line.split(",")[2], line.split(",")[3], line.split(",")[4], line.split(",")[5], int(line.split(",")[6]))
-
+readFile.close()
 
 """    
 #自定义SKU - SKU

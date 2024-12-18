@@ -63,14 +63,14 @@ for line1 in readFile1.readlines():
         print(int(line1.split(",")[4]))
         print(line1.split(",")[5])
         get_equal_rows_file(line1.split(",")[0], line1.split(",")[1],line1.split(",")[2], line1.split(",")[3], int(line1.split(",")[4]), line1.split(",")[5].replace("\n",""))
-
+readFile1.close()
 
 readFile2 = open("PInventory.txt","r",encoding="UTF-8")
 for line2 in readFile2.readlines():
     if "#" not in line2:
         print(line2)
         copy_xlsx_to_xlsx(line2.split(",")[0],line2.split(",")[1],line2.split(",")[2],line2.split(",")[3],line2.split(",")[4],line2.split(",")[5],int(line2.split(",")[6]))
-
+readFile2.close()
 
 inventory()
 """  
