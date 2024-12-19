@@ -1,5 +1,6 @@
 import xlrd
 import openpyxl
+import os
 
 
 
@@ -47,7 +48,10 @@ def copy_xls_to_xlsx(source_xls,source_sheet,source_column,target_xlsx,target_sh
             xlsx_sheet[f'{target_column}{row}'].value = value
     xlsx_workbook.save(target_xlsx)
 
-
+def get_file_name(folderPath,key):
+    for file in os.listdir(folderPath):
+        if file.startswith(key):
+            return file
 
 
 # get_xlsx_rows_equal_xls("1.xls","Sheet1","草稿-2WXX20240826.xlsx","Sheet0","Python-草稿-2WXX20240826.xlsx",2)
@@ -59,11 +63,11 @@ for line1 in getEqualRowsDraft.readlines():
         print(line1)
         print(line1.split(",")[0])
         print(line1.split(",")[1])
-        print(line1.split(",")[2])
+        print(get_file_name(os.getcwd(), line1.split(",")[2]))
         print(line1.split(",")[3])
-        print(line1.split(",")[4])
-        print(int(line1.split(",")[5]))
-        get_xlsx_rows_equal_xls(line1.split(",")[0], line1.split(",")[1], line1.split(",")[2], line1.split(",")[3], line1.split(",")[4], int(line1.split(",")[5]))
+        print("Python-" + get_file_name(os.getcwd(), line1.split(",")[2]))
+        print(int(line1.split(",")[4]))
+        get_xlsx_rows_equal_xls(line1.split(",")[0], line1.split(",")[1], get_file_name(os.getcwd(), line1.split(",")[2]), line1.split(",")[3], "Python-" + get_file_name(os.getcwd(), line1.split(",")[2]), int(line1.split(",")[4]))
 
 getEqualRowsDraft.close()
 
@@ -75,12 +79,12 @@ for line in file.readlines():
         print(line.split(",")[0])
         print(line.split(",")[1])
         print(line.split(",")[2])
-        print(line.split(",")[3])
+        print(get_file_name(os.getcwd(), line.split(",")[3]))
         print(line.split(",")[4])
         print(line.split(",")[5])
         #print(line.split(",")[5].replace("\n",""))
         print(line.split(",")[6])
-        copy_xls_to_xlsx(line.split(",")[0], line.split(",")[1], int(line.split(",")[2]), line.split(",")[3], line.split(",")[4], line.split(",")[5],int(line.split(",")[6]))
+        copy_xls_to_xlsx(line.split(",")[0], line.split(",")[1], int(line.split(",")[2]), get_file_name(os.getcwd(), line.split(",")[3]), line.split(",")[4], line.split(",")[5],int(line.split(",")[6]))
 
 file.close()
 

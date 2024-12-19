@@ -1,5 +1,6 @@
 import openpyxl
 import xlwt
+import os
 
 
 def get_equal_rows_file(source_file,source_sheet_name,target_file,target_sheet_name,target_start,save_file):
@@ -51,25 +52,30 @@ def inventory():
 
     xls_workbook.save("Python-Import.xls")
 
+def get_file_name(folderPath,key):
+    for file in os.listdir(folderPath):
+        if file.startswith(key):
+            return file
+
 
 readFile1 = open("getEqualRowsInventory.txt", "r", encoding="UTF-8")
 for line1 in readFile1.readlines():
     if "#" not in line1:
         print(line1)
-        print(line1.split(",")[0])
+        print(get_file_name(os.getcwd(), line1.split(",")[0]))
         print(line1.split(",")[1])
-        print(line1.split(",")[2])
+        print(get_file_name(os.getcwd(), line1.split(",")[2]))
         print(line1.split(",")[3])
         print(int(line1.split(",")[4]))
-        print(line1.split(",")[5])
-        get_equal_rows_file(line1.split(",")[0], line1.split(",")[1],line1.split(",")[2], line1.split(",")[3], int(line1.split(",")[4]), line1.split(",")[5].replace("\n",""))
+        print("Python-" + get_file_name(os.getcwd(), line1.split(",")[2]))
+        get_equal_rows_file(get_file_name(os.getcwd(), line1.split(",")[0]), line1.split(",")[1],get_file_name(os.getcwd(), line1.split(",")[2]), line1.split(",")[3], int(line1.split(",")[4]), "Python-" + get_file_name(os.getcwd(), line1.split(",")[2]))
 readFile1.close()
 
 readFile2 = open("PInventory.txt","r",encoding="UTF-8")
 for line2 in readFile2.readlines():
     if "#" not in line2:
         print(line2)
-        copy_xlsx_to_xlsx(line2.split(",")[0],line2.split(",")[1],line2.split(",")[2],line2.split(",")[3],line2.split(",")[4],line2.split(",")[5],int(line2.split(",")[6]))
+        copy_xlsx_to_xlsx(get_file_name(os.getcwd(), line2.split(",")[0]),line2.split(",")[1],line2.split(",")[2],get_file_name(os.getcwd(), line2.split(",")[3]),line2.split(",")[4],line2.split(",")[5],int(line2.split(",")[6]))
 readFile2.close()
 
 inventory()

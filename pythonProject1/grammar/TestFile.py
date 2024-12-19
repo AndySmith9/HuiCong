@@ -2,18 +2,27 @@ import os
 
 def get_file_name(folderPath,key):
     for file in os.listdir(folderPath):
-        if key in file:
+        if file.startswith(key):
+        # if key in file:
             return file
 
 # print(get_file_name("D:\\店铺产品-jishunzen1@163.com\\20241212","库存"))
+"""   
+path1 = input("请输入路径:")
+key1 = input("请输入文件名关键字:")
+print(get_file_name(path1, key1))
+"""
+print(os.getcwd())
+print(get_file_name(os.getcwd(),"xls"))
 
 
+"""  
 readFile = open("test.txt","r")
 lines = readFile.readlines()
 for line in lines:
     print(line.split()[0])
     print(type(line.split()[0]))
-
+"""
 
 
 

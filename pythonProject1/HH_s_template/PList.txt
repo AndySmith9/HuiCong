@@ -1,54 +1,54 @@
 #自定义SKU - SKU
-Python-草稿-2WXX20240826.xlsx,Sheet0,F,Python-上架表-2WXX20240826.xlsx,Clothing,D,7
+Python-草稿,Sheet0,F,Python-上架表,Clothing,D,7
 #上架标题 - Product Name
-Python-草稿-2WXX20240826.xlsx,Sheet0,L,Python-上架表-2WXX20240826.xlsx,Clothing,E,7
+Python-草稿,Sheet0,L,Python-上架表,Clothing,E,7
 #建议价（规则）- Selling Price
-Python-草稿-2WXX20240826.xlsx,Sheet0,AO,Python-上架表-2WXX20240826.xlsx,Clothing,H,7
+Python-草稿,Sheet0,AO,Python-上架表,Clothing,H,7
 #重量（LB）- Shipping Weight (lbs)
-Python-草稿-2WXX20240826.xlsx,Sheet0,AN,Python-上架表-2WXX20240826.xlsx,Clothing,J,7
+Python-草稿,Sheet0,AN,Python-上架表,Clothing,J,7
 #代理链接 1(主图) - Main Image URL
-Python-草稿-2WXX20240826.xlsx,Sheet0,BA,Python-上架表-2WXX20240826.xlsx,Clothing,K,7
+Python-草稿,Sheet0,BA,Python-上架表,Clothing,K,7
 #沃尔玛描述 - Site Description
-Python-草稿-2WXX20240826.xlsx,Sheet0,N,Python-上架表-2WXX20240826.xlsx,Clothing,L,7
+Python-草稿,Sheet0,N,Python-上架表,Clothing,L,7
 #建议价（规则）- MSRP
-Python-草稿-2WXX20240826.xlsx,Sheet0,AO,Python-上架表-2WXX20240826.xlsx,Clothing,BC,7
+Python-草稿,Sheet0,AO,Python-上架表,Clothing,BC,7
 #代理链接 2 - Additional Image URL (+)
-Python-草稿-2WXX20240826.xlsx,Sheet0,BB,Python-上架表-2WXX20240826.xlsx,Clothing,BF,7
+Python-草稿,Sheet0,BB,Python-上架表,Clothing,BF,7
 #代理链接 3 - Additional Image URL 1 (+)
-Python-草稿-2WXX20240826.xlsx,Sheet0,BC,Python-上架表-2WXX20240826.xlsx,Clothing,BG,7
+Python-草稿,Sheet0,BC,Python-上架表,Clothing,BG,7
 #代理链接 4 - Additional Image URL 2 (+)
-Python-草稿-2WXX20240826.xlsx,Sheet0,BD,Python-上架表-2WXX20240826.xlsx,Clothing,BH,7
+Python-草稿,Sheet0,BD,Python-上架表,Clothing,BH,7
 #代理链接 5 - Additional Image URL 3 (+)
-Python-草稿-2WXX20240826.xlsx,Sheet0,BE,Python-上架表-2WXX20240826.xlsx,Clothing,BI,7
+Python-草稿,Sheet0,BE,Python-上架表,Clothing,BI,7
 #代理链接 6 - Additional Image URL 4 (+)
-Python-草稿-2WXX20240826.xlsx,Sheet0,BF,Python-上架表-2WXX20240826.xlsx,Clothing,BJ,7
+Python-草稿,Sheet0,BF,Python-上架表,Clothing,BJ,7
 #代理链接 7 - Additional Image URL 5 (+)
-Python-草稿-2WXX20240826.xlsx,Sheet0,BG,Python-上架表-2WXX20240826.xlsx,Clothing,BK,7
+Python-草稿,Sheet0,BG,Python-上架表,Clothing,BK,7
 #代理链接 8 - Additional Image URL 6 (+)
-Python-草稿-2WXX20240826.xlsx,Sheet0,BH,Python-上架表-2WXX20240826.xlsx,Clothing,BL,7
+Python-草稿,Sheet0,BH,Python-上架表,Clothing,BL,7
 #代理链接 9 - Additional Image URL 7 (+)
-Python-草稿-2WXX20240826.xlsx,Sheet0,BI,Python-上架表-2WXX20240826.xlsx,Clothing,BM,7
+Python-草稿,Sheet0,BI,Python-上架表,Clothing,BM,7
 #颜色 - Color (+)
-Python-草稿-2WXX20240826.xlsx,Sheet0,AG,Python-上架表-2WXX20240826.xlsx,Clothing,DC,7
+Python-草稿,Sheet0,AG,Python-上架表,Clothing,DC,7
 #亮点1 - Key Features (+)
-Python-草稿-2WXX20240826.xlsx,Sheet0,Y,Python-上架表-2WXX20240826.xlsx,Clothing,DE,7
+Python-草稿,Sheet0,Y,Python-上架表,Clothing,DE,7
 #亮点2 - Key Features 1 (+)
-Python-草稿-2WXX20240826.xlsx,Sheet0,Z,Python-上架表-2WXX20240826.xlsx,Clothing,DF,7
+Python-草稿,Sheet0,Z,Python-上架表,Clothing,DF,7
 #亮点3 - Key Features 2 (+)
-Python-草稿-2WXX20240826.xlsx,Sheet0,AA,Python-上架表-2WXX20240826.xlsx,Clothing,DG,7
+Python-草稿,Sheet0,AA,Python-上架表,Clothing,DG,7
 #亮点4 - Key Features 3 (+)
-Python-草稿-2WXX20240826.xlsx,Sheet0,AB,Python-上架表-2WXX20240826.xlsx,Clothing,DH,7
+Python-草稿,Sheet0,AB,Python-上架表,Clothing,DH,7
 #亮点5 - Key Features 4 (+)
-Python-草稿-2WXX20240826.xlsx,Sheet0,AC,Python-上架表-2WXX20240826.xlsx,Clothing,DI,7
+Python-草稿,Sheet0,AC,Python-上架表,Clothing,DI,7
 #亮点6 - Key Features 5 (+)
-Python-草稿-2WXX20240826.xlsx,Sheet0,AD,Python-上架表-2WXX20240826.xlsx,Clothing,DJ,7
+Python-草稿,Sheet0,AD,Python-上架表,Clothing,DJ,7
 #亮点7 - Key Features 6 (+)
-Python-草稿-2WXX20240826.xlsx,Sheet0,AE,Python-上架表-2WXX20240826.xlsx,Clothing,DK,7
+Python-草稿,Sheet0,AE,Python-上架表,Clothing,DK,7
 #尺寸 - Clothing Size
-Python-草稿-2WXX20240826.xlsx,Sheet0,AH,Python-上架表-2WXX20240826.xlsx,Clothing,DS,7
+Python-草稿,Sheet0,AH,Python-上架表,Clothing,DS,7
 #英文材质 - Material (+)
-Python-草稿-2WXX20240826.xlsx,Sheet0,AJ,Python-上架表-2WXX20240826.xlsx,Clothing,EH,7
+Python-草稿,Sheet0,AJ,Python-上架表,Clothing,EH,7
 #自定义SKU - Variant Group ID
-Python-草稿-2WXX20240826.xlsx,Sheet0,F,Python-上架表-2WXX20240826.xlsx,Clothing,EN,7
+Python-草稿,Sheet0,F,Python-上架表,Clothing,EN,7
 #代理链接100*100缩率图(Formula) - Swatch Image URL
-Python-草稿-2WXX20240826.xlsx,Sheet0,BK,Python-上架表-2WXX20240826.xlsx,Clothing,ER,7
+Python-草稿,Sheet0,BK,Python-上架表,Clothing,ER,7

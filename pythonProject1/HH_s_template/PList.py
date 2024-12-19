@@ -1,5 +1,5 @@
 import openpyxl
-
+import os
 
 
 def get_xlsx_equal_rows_xlsx(source_xlsx,source_sheet,target_xlsx,target_sheet,save_xlsx,target_start):
@@ -28,6 +28,10 @@ def copy_xlsx_to_xlsx(source_file,source_sheet,source_column,target_file,target_
         target_sheet1[f'{target_column}' + str(index + target_start)].value = value
     target_workbook.save(target_file)
 
+def get_file_name(folderPath,key):
+    for file in os.listdir(folderPath):
+        if file.startswith(key):
+            return file
 
 # get_xlsx_equal_rows_xlsx("Python-草稿-2WXX20240826.xlsx","Sheet0","上架表-2WXX20240826.xlsx","Clothing","Python-上架表-2WXX20240826.xlsx",7)
 """
@@ -39,7 +43,13 @@ getEqualRowsList = open("getEqualRowsList.txt","r",encoding="UTF-8")
 for line1 in getEqualRowsList.readlines():
     if "#" not in line1:
         print(line1)
-        get_xlsx_equal_rows_xlsx(line1.split(",")[0], line1.split(",")[1], line1.split(",")[2], line1.split(",")[3], line1.split(",")[4], int(line1.split(",")[5]))
+        print(get_file_name(os.getcwd(), line1.split(",")[0]))
+        print(line1.split(",")[1])
+        print(get_file_name(os.getcwd(), line1.split(",")[2]))
+        print(line1.split(",")[3])
+        print("Python-" + get_file_name(os.getcwd(), line1.split(",")[2]))
+        print(int(line1.split(",")[4]))
+        get_xlsx_equal_rows_xlsx(get_file_name(os.getcwd(), line1.split(",")[0]), line1.split(",")[1], get_file_name(os.getcwd(), line1.split(",")[2]), line1.split(",")[3], "Python-" + get_file_name(os.getcwd(), line1.split(",")[2]), int(line1.split(",")[4]))
 getEqualRowsList.close()
 
 
@@ -48,15 +58,17 @@ readFile = open("PList.txt", "r", encoding="UTF-8")
 for line in readFile.readlines():
     if "#" not in line:
         print(line)
-        print(line.split(",")[0])
+        print(get_file_name(os.getcwd(), line.split(",")[0]))
         print(line.split(",")[1])
         print(line.split(",")[2])
-        print(line.split(",")[3])
+        print(get_file_name(os.getcwd(), line.split(",")[3]))
         print(line.split(",")[4])
         print(line.split(",")[5])
         print(line.split(",")[6])
-        copy_xlsx_to_xlsx(line.split(",")[0], line.split(",")[1], line.split(",")[2], line.split(",")[3], line.split(",")[4], line.split(",")[5], int(line.split(",")[6]))
+        copy_xlsx_to_xlsx(get_file_name(os.getcwd(), line.split(",")[0]), line.split(",")[1], line.split(",")[2], get_file_name(os.getcwd(), line.split(",")[3]), line.split(",")[4], line.split(",")[5], int(line.split(",")[6]))
 readFile.close()
+
+
 
 """    
 #自定义SKU - SKU
