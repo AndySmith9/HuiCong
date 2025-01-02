@@ -1,4 +1,5 @@
 import openpyxl
+import os
 
 def replace_key(sourceFile,sourceSheet,targetFile,targetSheet):
     source_workbook = openpyxl.load_workbook(sourceFile, data_only=True)
@@ -29,6 +30,10 @@ def replace_key(sourceFile,sourceSheet,targetFile,targetSheet):
 
     target_workbook.save(targetFile)
 
+def get_file_name(folderPath,key):
+    for file in os.listdir(folderPath):
+        if file.startswith(key):
+            return file
 
-replace_key("Python-草稿-2WXX20240826.xlsx","Key","Python-草稿-2WXX20240826.xlsx","Sheet0")
-
+#replace_key("Python-草稿-2WXX20240826.xlsx","Key","Python-草稿-2WXX20240826.xlsx","Sheet0")
+replace_key(get_file_name(os.getcwd(), "Python-草稿"),"Key",get_file_name(os.getcwd(), "Python-草稿"),"Sheet0")

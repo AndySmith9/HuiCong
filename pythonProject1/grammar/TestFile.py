@@ -12,8 +12,12 @@ path1 = input("请输入路径:")
 key1 = input("请输入文件名关键字:")
 print(get_file_name(path1, key1))
 """
-print(os.getcwd())
-print(get_file_name(os.getcwd(),"xls"))
+
+if __name__ == "__main__":
+    print(os.getcwd())
+    print(get_file_name(os.getcwd(), "xls"))
+    print(__name__)
+
 
 
 """  

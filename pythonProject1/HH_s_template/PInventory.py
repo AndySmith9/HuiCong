@@ -38,13 +38,14 @@ def copy_xlsx_to_xls(sourceSheet,sourceRow,sourceColumn,targetSheet,targetRow,ta
         source.append(sourceSheet[f"{sourceColumn}{i}"].value)
     for index, value in enumerate(source):
         targetSheet.write(index + targetRow, targetColumn, value)
-def inventory():
+def import_sku(source_file):
     xls_workbook = xlwt.Workbook()
     sheet1 = xls_workbook.add_sheet("Sheet1")
     title = ("SKU", "平台SKU")
     for index, value in enumerate(title):
         sheet1.write(0, index, value)
-    xlsx_workbook = openpyxl.load_workbook("Python-草稿-2WXX20240826.xlsx", data_only=True)
+    #xlsx_workbook = openpyxl.load_workbook("Python-草稿-2WXX20240826.xlsx", data_only=True)
+    xlsx_workbook = openpyxl.load_workbook(source_file, data_only=True)
     xlsx_sheet = xlsx_workbook["Sheet0"]
 
     copy_xlsx_to_xls(xlsx_sheet, 2, "A", sheet1, 1, 0)
@@ -78,7 +79,16 @@ for line2 in readFile2.readlines():
         copy_xlsx_to_xlsx(get_file_name(os.getcwd(), line2.split(",")[0]),line2.split(",")[1],line2.split(",")[2],get_file_name(os.getcwd(), line2.split(",")[3]),line2.split(",")[4],line2.split(",")[5],int(line2.split(",")[6]))
 readFile2.close()
 
-inventory()
+
+readFile3 = open("import.txt","r",encoding="UTF-8")
+for line3 in readFile3.readlines():
+    if "#" not in line3:
+        print(line3)
+        import_sku(get_file_name(os.getcwd(),line3))
+readFile3.close()
+
+
+
 """  
 #库存
 get_equal_rows_file("Python-草稿-2WXX20240826.xlsx","Sheet0","库存-2WXX20240826.xlsx","ExampleSheet",3,"Python-库存-2WXX20240826.xlsx")
