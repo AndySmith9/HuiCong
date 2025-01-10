@@ -4,3 +4,4 @@ from module import *
 from pythonProject1.grammar.module import TestFile
 
 print(TestFile.get_file_name(os.getcwd(),"Test"))
+print(__name__)

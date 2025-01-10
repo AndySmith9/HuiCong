@@ -25,7 +25,25 @@ else:
     print("请输入正确选项")
 """
 
-print(TestFile.get_file_name(os.getcwd(),"1"))
+# print(TestFile.get_file_name(os.getcwd(),"1"))
+
+str1 = """
+Hello
+Andy
+"""
+print(str1)
+
+str2 = ("Hello"
+        "Andy")
+print(str2)
+
+print(f"QQQQ{str1}")  #f格式化字符串
+
+print('C:\some\name')
+print(r'C:\some\name') #r取消\的转义作用
+
+
+
 
 
 

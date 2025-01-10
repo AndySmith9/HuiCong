@@ -1,6 +1,7 @@
 import os
 
 def get_file_name(folderPath,key):
+    print(__name__)
     for file in os.listdir(folderPath):
         if file.startswith(key):
         # if key in file:
