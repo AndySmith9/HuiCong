@@ -39,11 +39,15 @@ print(str2)
 
 print(f"QQQQ{str1}")  #f格式化字符串
 
-print('C:\some\name')
+#print('C:\some\name')
 print(r'C:\some\name') #r取消\的转义作用
 
 
-
+list1 = []
+list1.append(1)
+list1.append(2)
+list1.append(3)
+print(len(list1))
 
 
 

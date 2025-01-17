@@ -49,7 +49,7 @@ def fetch_amazon_data(url):
 #
 #
 
-url = "https://www.amazon.com/dp/B0DDTHYKSW"
+url = "https://www.amazon.com/dp/B0DRTY3HVM"
 result, title, price = fetch_amazon_data(url)
 if result:
     print(f"商品标题: {title}")
