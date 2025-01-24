@@ -24,6 +24,10 @@ def fetch_amazon_data(url):
         """
         options.add_experimental_option("debuggerAddress", "127.0.0.1:9527")
         driver = webdriver.Chrome(options=options)
+        driver.execute_cdp_cmd(
+            'Page.addScriptToEvaluateOnNewDocument',
+            {'source': 'Object.defineProperty(navigator, "webdriver", {get: () => undefined})'}
+        )
         driver.get(url)
 
 
