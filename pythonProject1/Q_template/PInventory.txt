@@ -1,0 +1,11 @@
+#库存
+Python-草稿,Children,F,Python-库存,ExampleSheet,A,3
+#运费
+Python-草稿,Children,F,Python-运费,Precise Delivery,D,7
+Python-草稿,Children,AR,Python-运费,Precise Delivery,E,7
+#促销
+Python-草稿,Children,F,Python-促销,Price & Promotion,D,7
+Python-草稿,Children,AO,Python-促销,Price & Promotion,F,7
+Python-草稿,Children,AQ,Python-促销,Price & Promotion,J,7
+#Lag-Time   行首格式一样,不用修复了
+Python-草稿,Children,F,Python-Lag-Time,Sheet1,A,3

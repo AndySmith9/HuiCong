@@ -1,6 +1,7 @@
 import time
 from urllib.error import HTTPError
 
+import pygetwindow
 from selenium import webdriver
 from selenium.common import UnexpectedAlertPresentException
 from selenium.webdriver.chrome.options import Options
@@ -113,7 +114,20 @@ def get_img_from_row(source_workbook,source_worksheet,row):
     sku_input.send_keys(sku)
     sku_label = chrome_driver.find_element(By.CSS_SELECTOR,".w-lg-50p .el-form-item.is-required.el-form-item--default .el-form-item__label")
     sku_label.click()
+def switch_browser_tag():
+    target_window = pygetwindow.getWindowsWithTitle("Google Chrome")[0]
+    target_window.activate()
 
+    options = Options()
+    options.add_experimental_option("debuggerAddress", "127.0.0.1:9527")
+    chrome_driver = webdriver.Chrome(options=options)
+    # chrome_driver.get("http://erpx.ksold.ltd:18085/store/product/walmart/template/add")
+    handles = chrome_driver.window_handles
+    for handle in handles:
+        chrome_driver.switch_to.window(handle)
+        print(chrome_driver.title)
+        if "添加模板 - 店铺管理系统" in chrome_driver.title:
+            break
 
 
 
@@ -126,6 +140,7 @@ if __name__ == "__main__":
         else:
             print("你输入行号为:" + input1)
             get_img_from_row(get_file(os.getcwd(),"Python-草稿"),"Sheet0", input1)
+            #switch_browser_tag()
 
 
 
