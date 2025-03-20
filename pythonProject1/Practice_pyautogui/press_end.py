@@ -22,3 +22,4 @@ target_window.activate()
 #         break
 
 pyautogui.press('end')
+pyautogui.hotkey("Alt","Shift","R")

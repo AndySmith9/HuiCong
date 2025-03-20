@@ -9,7 +9,7 @@ for title in window_titles:
     print(title)
 
 
-for i in range(25):
+for i in range(60):
     target_window = pygetwindow.getWindowsWithTitle("jingqiadg@163.com")[0]
     target_window.activate()
     print(target_window.title)

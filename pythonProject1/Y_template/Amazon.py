@@ -51,6 +51,8 @@ def fetch_amazon_data(url):
         #driver.close()
     except HTTPError:
         print("HTTPError")
+    except Exception:
+        print("请检查url:"+url)
     time.sleep(1)
     return result, title, keys
 

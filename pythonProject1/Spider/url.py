@@ -1,7 +1,7 @@
+import base64
 import time
 from urllib.error import HTTPError
 
-import pygetwindow
 from selenium import webdriver
 from selenium.common import UnexpectedAlertPresentException
 from selenium.webdriver.chrome.options import Options
@@ -109,25 +109,45 @@ def get_img_from_row(source_workbook,source_worksheet,row):
     options.add_experimental_option("debuggerAddress", "127.0.0.1:9527")
     chrome_driver = webdriver.Chrome(options=options)
     chrome_driver.get("http://erpx.ksold.ltd:18085/store/product/walmart/template/add")
-    time.sleep(1)
+    # time.sleep(1)
     sku_input = chrome_driver.find_element(By.CSS_SELECTOR,".flex .el-input.el-input--default .el-input__inner")
     sku_input.send_keys(sku)
     sku_label = chrome_driver.find_element(By.CSS_SELECTOR,".w-lg-50p .el-form-item.is-required.el-form-item--default .el-form-item__label")
     sku_label.click()
-def switch_browser_tag():
-    target_window = pygetwindow.getWindowsWithTitle("Google Chrome")[0]
-    target_window.activate()
-
-    options = Options()
-    options.add_experimental_option("debuggerAddress", "127.0.0.1:9527")
-    chrome_driver = webdriver.Chrome(options=options)
-    # chrome_driver.get("http://erpx.ksold.ltd:18085/store/product/walmart/template/add")
-    handles = chrome_driver.window_handles
-    for handle in handles:
-        chrome_driver.switch_to.window(handle)
-        print(chrome_driver.title)
-        if "添加模板 - 店铺管理系统" in chrome_driver.title:
+    time.sleep(2)
+    imgs = chrome_driver.find_elements(By.CSS_SELECTOR,"img")
+    # time.sleep(20)
+    chrome_driver.execute_script("window.open('');")
+    for img in imgs:
+        src_value = img.get_attribute("src")
+        if src_value.startswith("data:image"):
+            time.sleep(2)
+        else:
+            print(src_value)
+            # chrome_driver.execute_script("window.open('');")
+            # time.sleep(2)
+            chrome_driver.switch_to.window(chrome_driver.window_handles[1])
+            chrome_driver.get(src_value)
+            # handles = chrome_driver.window_handles
+            # for handle in handles:
+            #     chrome_driver.switch_to.window(handle)
+            #     # print(chrome_driver.title)
+            #     if "添加模板 - 店铺管理系统" in chrome_driver.title:
+            #         break
             break
+
+
+        # time.sleep(10)
+        # print(src_value)
+        # base64_data = src_value.split(",",1)
+        # for data in base64_data:
+        #     print(data)
+        # print(base64_data[0])
+        # decoded_data = base64.b64decode(base64_data[1])
+        # print(decoded_data)
+
+
+
 
 
 
@@ -140,7 +160,6 @@ if __name__ == "__main__":
         else:
             print("你输入行号为:" + input1)
             get_img_from_row(get_file(os.getcwd(),"Python-草稿"),"Sheet0", input1)
-            #switch_browser_tag()
 
 
 
