@@ -4,6 +4,8 @@ from urllib.error import HTTPError
 
 from selenium import webdriver
 from selenium.common import UnexpectedAlertPresentException
+from selenium.webdriver import ActionChains
+from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 import os
@@ -124,27 +126,24 @@ def get_img_from_row(source_workbook,source_worksheet,row):
             time.sleep(2)
         else:
             print(src_value)
-            # chrome_driver.execute_script("window.open('');")
-            # time.sleep(2)
             chrome_driver.switch_to.window(chrome_driver.window_handles[1])
             chrome_driver.get(src_value)
-            # handles = chrome_driver.window_handles
-            # for handle in handles:
-            #     chrome_driver.switch_to.window(handle)
-            #     # print(chrome_driver.title)
-            #     if "添加模板 - 店铺管理系统" in chrome_driver.title:
-            #         break
+
+            img_element = chrome_driver.find_element(By.CSS_SELECTOR,"img")
+            action = ActionChains(chrome_driver)
+            action.context_click(img_element).perform()
+            # time.sleep(3)
+            # plugin_option_xpath = "//div[contains(text(),'图片另存为...')]"
+            # #在AliPrice上以图搜同款
+            # plugin_option_element = chrome_driver.find_element(By.XPATH,plugin_option_xpath)
+            # plugin_option_element.click()
+            # time.sleep(3)
+            # for _ in range(7):
+            # action.send_keys(Keys.ARROW_DOWN).perform()
+            # time.sleep(3)
+            # action.send_keys(Keys.ENTER).perform()
+
             break
-
-
-        # time.sleep(10)
-        # print(src_value)
-        # base64_data = src_value.split(",",1)
-        # for data in base64_data:
-        #     print(data)
-        # print(base64_data[0])
-        # decoded_data = base64.b64decode(base64_data[1])
-        # print(decoded_data)
 
 
 
