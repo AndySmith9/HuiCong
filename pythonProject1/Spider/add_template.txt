@@ -1,0 +1,2 @@
+#卖家账号,产品分类,编码类型
+jingqiadg@163.com,Clothing,EAN
