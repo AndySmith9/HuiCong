@@ -167,7 +167,7 @@ def add_template_from_xlsx(lb,sku,title,brand,store_account,category,code_type):
     #产品标题有问题
     """   """
     inputs = chrome_driver.find_elements(By.CSS_SELECTOR,".el-form-item__content .el-input.el-input--default .el-input__inner")
-    print(len(inputs))
+    # print(len(inputs))
     for input in inputs:
         if input.get_attribute("placeholder") == "请输入产品名称":
             input.clear()
@@ -196,14 +196,16 @@ def add_template_from_xlsx(lb,sku,title,brand,store_account,category,code_type):
         print(input.get_attribute("placeholder"))
         div.click()
 
+        time.sleep(1)
         spans = chrome_driver.find_elements(By.CSS_SELECTOR, ".el-select-dropdown.el-popper .el-scrollbar ul li span")
         # print(len(spans))
 
         for span in spans:
             if len(span.text) != 0:
-                # print(span.text)
+                print(span.text)
                 if span.text == store_account or span.text == category or span.text == code_type:
                     chrome_driver.execute_script("arguments[0].click();", span)
+
 
 
     sub_button = chrome_driver.find_element(By.CSS_SELECTOR,".app-main .submit-button .fixed-button button")
@@ -237,7 +239,7 @@ if __name__ == "__main__":
             # print(len(code_type))
 
     for i in range(2,cycle_times+1):
-        print(f"循环次数:{i}")
+        print(f"循环次数:{i-1}")
         lb = worksheet[f"AN{i}"].value
         sku = worksheet[f"A{i}"].value
         title = worksheet[f"J{i}"].value
