@@ -1,54 +1,58 @@
 #自定义SKU - SKU
-Python-草稿,Children,F,Python-上架表,Clothing,D,7
+Python-草稿,Children,F,Python-上架表,Beauty Personal Care & Hygie,D,7
 #上架标题 - Product Name
-Python-草稿,Children,L,Python-上架表,Clothing,E,7
+Python-草稿,Children,L,Python-上架表,Beauty Personal Care & Hygie,G,7
 #建议价（规则）- Selling Price
-Python-草稿,Children,AO,Python-上架表,Clothing,H,7
-#重量（LB）- Shipping Weight (lbs)
-Python-草稿,Children,AN,Python-上架表,Clothing,J,7
-#代理链接 1(主图) - Main Image URL
-Python-草稿,Children,BA,Python-上架表,Clothing,K,7
+Python-草稿,Children,AO,Python-上架表,Beauty Personal Care & Hygie,K,7
+#重量（LB）- Measure
+Python-草稿,Children,AN,Python-上架表,Beauty Personal Care & Hygie,N,7
 #沃尔玛描述 - Site Description
-Python-草稿,Children,N,Python-上架表,Clothing,L,7
-#建议价（规则）- MSRP
-Python-草稿,Children,AO,Python-上架表,Clothing,BC,7
-#代理链接 2 - Additional Image URL (+)
-Python-草稿,Children,BB,Python-上架表,Clothing,BF,7
-#代理链接 3 - Additional Image URL 1 (+)
-Python-草稿,Children,BC,Python-上架表,Clothing,BG,7
-#代理链接 4 - Additional Image URL 2 (+)
-Python-草稿,Children,BD,Python-上架表,Clothing,BH,7
-#代理链接 5 - Additional Image URL 3 (+)
-Python-草稿,Children,BE,Python-上架表,Clothing,BI,7
-#代理链接 6 - Additional Image URL 4 (+)
-Python-草稿,Children,BF,Python-上架表,Clothing,BJ,7
-#代理链接 7 - Additional Image URL 5 (+)
-Python-草稿,Children,BG,Python-上架表,Clothing,BK,7
-#代理链接 8 - Additional Image URL 6 (+)
-Python-草稿,Children,BH,Python-上架表,Clothing,BL,7
-#代理链接 9 - Additional Image URL 7 (+)
-Python-草稿,Children,BI,Python-上架表,Clothing,BM,7
-#颜色 - Color (+)
-Python-草稿,Children,AG,Python-上架表,Clothing,DC,7
+Python-草稿,Children,N,Python-上架表,Beauty Personal Care & Hygie,P,7
+#代理链接 1(主图) - Main Image URL
+Python-草稿,Children,BA,Python-上架表,Beauty Personal Care & Hygie,R,7
 #亮点1 - Key Features (+)
-Python-草稿,Children,Y,Python-上架表,Clothing,DE,7
+Python-草稿,Children,Y,Python-上架表,Beauty Personal Care & Hygie,S,7
 #亮点2 - Key Features 1 (+)
-Python-草稿,Children,Z,Python-上架表,Clothing,DF,7
+Python-草稿,Children,Z,Python-上架表,Beauty Personal Care & Hygie,U,7
 #亮点3 - Key Features 2 (+)
-Python-草稿,Children,AA,Python-上架表,Clothing,DG,7
+Python-草稿,Children,AA,Python-上架表,Beauty Personal Care & Hygie,W,7
 #亮点4 - Key Features 3 (+)
-Python-草稿,Children,AB,Python-上架表,Clothing,DH,7
+Python-草稿,Children,AB,Python-上架表,Beauty Personal Care & Hygie,Y,7
 #亮点5 - Key Features 4 (+)
-Python-草稿,Children,AC,Python-上架表,Clothing,DI,7
+Python-草稿,Children,AC,Python-上架表,Beauty Personal Care & Hygie,AA,7
 #亮点6 - Key Features 5 (+)
-Python-草稿,Children,AD,Python-上架表,Clothing,DJ,7
+Python-草稿,Children,AD,Python-上架表,Beauty Personal Care & Hygie,AC,7
 #亮点7 - Key Features 6 (+)
-Python-草稿,Children,AE,Python-上架表,Clothing,DK,7
-#尺寸 - Clothing Size
-Python-草稿,Children,AH,Python-上架表,Clothing,DS,7
+Python-草稿,Children,AE,Python-上架表,Beauty Personal Care & Hygie,AE,7
+#建议价（规则）- Manufacturer Suggested Retail Price (MSRP)
+Python-草稿,Children,AO,Python-上架表,Beauty Personal Care & Hygie,AI,7
+#代理链接 2 - Additional Image URL (+)
+Python-草稿,Children,BB,Python-上架表,Beauty Personal Care & Hygie,AJ,7
+#代理链接 3 - Additional Image URL 1 (+)
+Python-草稿,Children,BC,Python-上架表,Beauty Personal Care & Hygie,AK,7
+#代理链接 4 - Additional Image URL 2 (+)
+Python-草稿,Children,BD,Python-上架表,Beauty Personal Care & Hygie,AL,7
+#代理链接 5 - Additional Image URL 3 (+)
+Python-草稿,Children,BE,Python-上架表,Beauty Personal Care & Hygie,AM,7
+#代理链接 6 - Additional Image URL 4 (+)
+Python-草稿,Children,BF,Python-上架表,Beauty Personal Care & Hygie,AN,7
+#代理链接 7 - Additional Image URL 5 (+)
+Python-草稿,Children,BG,Python-上架表,Beauty Personal Care & Hygie,AO,7
+#代理链接 8 - Additional Image URL 6 (+)
+Python-草稿,Children,BH,Python-上架表,Beauty Personal Care & Hygie,AP,7
+#代理链接 9 - Additional Image URL 7 (+)
+Python-草稿,Children,BI,Python-上架表,Beauty Personal Care & Hygie,AQ,7
+#上架标题 - Keywords
+Python-草稿,Children,L,Python-上架表,Beauty Personal Care & Hygie,AW,7
+#颜色 - Color (+)
+Python-草稿,Children,AG,Python-上架表,Beauty Personal Care & Hygie,BZ,7
 #英文材质 - Material (+)
-Python-草稿,Children,AJ,Python-上架表,Clothing,EH,7
-#自定义父SKU - Variant Group ID
-Python-草稿,Children,G,Python-上架表,Clothing,EN,7
+Python-草稿,Children,AJ,Python-上架表,Beauty Personal Care & Hygie,DP,7
+#上架标题 - Recommended Use (+)
+Python-草稿,Children,L,Python-上架表,Beauty Personal Care & Hygie,EA,7
+#尺寸 - Size
+Python-草稿,Children,AH,Python-上架表,Beauty Personal Care & Hygie,EF,7
 #代理链接100*100缩率图(Formula) - Swatch Image URL
-Python-草稿,Children,BK,Python-上架表,Clothing,ER,7
+Python-草稿,Children,BK,Python-上架表,Beauty Personal Care & Hygie,FA,7
+#自定义父SKU - Variant Group ID
+Python-草稿,Children,G,Python-上架表,Beauty Personal Care & Hygie,FC,7
