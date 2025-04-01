@@ -14,6 +14,24 @@ for index,row in enumerate(lines):
     print(locals()["worksheet"+str(index)].title)
 """
 
+"""
+配置文件格式:
+D:\店铺产品-jingqiadg@163.com\202502\促销-merged.xlsx,
+D:\店铺产品-jingqiadg@163.com\202502\20250210\促销-WXX20250210.xlsx,
+D:\店铺产品-jingqiadg@163.com\202502\20250211\促销-WXX20250211.xlsx,7
+D:\店铺产品-jingqiadg@163.com\202502\20250212\促销-WXX20250212.xlsx,7
+D:\店铺产品-jingqiadg@163.com\202502\20250213\促销-WXX20250213.xlsx,7
+D:\店铺产品-jingqiadg@163.com\202502\20250214\促销-WXX20250214.xlsx,7
+D:\店铺产品-jingqiadg@163.com\202502\20250215\促销-WXX20250215.xlsx,7
+D:\店铺产品-jingqiadg@163.com\202502\20250217\促销-WXX20250217.xlsx,7
+D:\店铺产品-jingqiadg@163.com\202502\20250219\促销-WXX20250219.xlsx,7
+D:\店铺产品-jingqiadg@163.com\202502\20250220\促销-WXX20250220.xlsx,7
+D:\店铺产品-jingqiadg@163.com\202502\20250221\促销-WXX20250221.xlsx,7
+D:\店铺产品-jingqiadg@163.com\202502\20250224\促销-WXX20250224.xlsx,7
+D:\店铺产品-jingqiadg@163.com\202502\20250227\促销-WXX20250227.xlsx,7
+D:\店铺产品-jingqiadg@163.com\202502\20250228\促销-WXX20250228.xlsx,7
+"""
+
 for i in range(1,len(lines)):
     locals()["workbook"+str(i)] = openpyxl.load_workbook(lines[i].split(",")[0],data_only=True)
     print(locals()["workbook"+str(i)].sheetnames)
