@@ -153,8 +153,7 @@ def add_template_from_xlsx(lb,sku,title,brand,store_account,category,code_type):
     chrome_driver = webdriver.Chrome(options=options)
     chrome_driver.get("http://erpx.ksold.ltd:18085/store/product/walmart/template/add")
 
-
-
+    time.sleep(1)
     weight = chrome_driver.find_element(By.CSS_SELECTOR,".el-form-item__content .el-input.el-input--default.el-input-group.el-input-group--append .el-input__inner")
     weight.send_keys(lb)
 
@@ -170,7 +169,9 @@ def add_template_from_xlsx(lb,sku,title,brand,store_account,category,code_type):
     # print(len(inputs))
     for input in inputs:
         if input.get_attribute("placeholder") == "请输入产品名称":
+            time.sleep(2)
             input.clear()
+            time.sleep(1)
             # input.send_keys(title)
             #send_keys()输入字符串,会将字符串里的空格自动去掉
             input.send_keys(title.replace(" ","*"))
