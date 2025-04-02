@@ -1,0 +1,56 @@
+#自定义SKU - SKU
+Python-草稿,Children,F,Python-上架表,Clothing,D,7
+#上架标题 - Product Name
+Python-草稿,Children,L,Python-上架表,Clothing,G,7
+#建议价（规则）- Selling Price
+Python-草稿,Children,AO,Python-上架表,Clothing,K,7
+#重量（LB）- Measure
+Python-草稿,Children,AN,Python-上架表,Clothing,N,7
+#沃尔玛描述 - Site Description
+Python-草稿,Children,N,Python-上架表,Clothing,P,7
+#代理链接 1(主图) - Main Image URL
+Python-草稿,Children,BA,Python-上架表,Clothing,R,7
+#亮点1 - Key Features (+)
+Python-草稿,Children,Y,Python-上架表,Clothing,S,7
+#亮点2 - Key Features 1 (+)
+Python-草稿,Children,Z,Python-上架表,Clothing,U,7
+#亮点3 - Key Features 2 (+)
+Python-草稿,Children,AA,Python-上架表,Clothing,W,7
+#亮点4 - Key Features 3 (+)
+Python-草稿,Children,AB,Python-上架表,Clothing,Y,7
+#亮点5 - Key Features 4 (+)
+Python-草稿,Children,AC,Python-上架表,Clothing,AA,7
+#亮点6 - Key Features 5 (+)
+Python-草稿,Children,AD,Python-上架表,Clothing,AC,7
+#亮点7 - Key Features 6 (+)
+Python-草稿,Children,AE,Python-上架表,Clothing,AE,7
+#建议价（规则）- Manufacturer Suggested Retail Price (MSRP)
+Python-草稿,Children,AO,Python-上架表,Clothing,AI,7
+#代理链接 2 - Additional Image URL (+)
+Python-草稿,Children,BB,Python-上架表,Clothing,AJ,7
+#代理链接 3 - Additional Image URL 1 (+)
+Python-草稿,Children,BC,Python-上架表,Clothing,AK,7
+#代理链接 4 - Additional Image URL 2 (+)
+Python-草稿,Children,BD,Python-上架表,Clothing,AL,7
+#代理链接 5 - Additional Image URL 3 (+)
+Python-草稿,Children,BE,Python-上架表,Clothing,AM,7
+#代理链接 6 - Additional Image URL 4 (+)
+Python-草稿,Children,BF,Python-上架表,Clothing,AN,7
+#代理链接 7 - Additional Image URL 5 (+)
+Python-草稿,Children,BG,Python-上架表,Clothing,AO,7
+#代理链接 8 - Additional Image URL 6 (+)
+Python-草稿,Children,BH,Python-上架表,Clothing,AP,7
+#代理链接 9 - Additional Image URL 7 (+)
+Python-草稿,Children,BI,Python-上架表,Clothing,AQ,7
+#上架标题 - Keywords
+Python-草稿,Children,L,Python-上架表,Clothing,AX,7
+#尺寸 - Clothing Size
+Python-草稿,Children,AH,Python-上架表,Clothing,BL,7
+#颜色 - Color (+)
+Python-草稿,Children,AG,Python-上架表,Clothing,BO,7
+#英文材质 - Material (+)
+Python-草稿,Children,AJ,Python-上架表,Clothing,BZ,7
+#自定义父SKU - Variant Group ID
+Python-草稿,Children,G,Python-上架表,Clothing,HP,7
+#代理链接100*100缩率图(Formula) - Swatch Image URL
+Python-草稿,Children,BK,Python-上架表,Clothing,HU,7
