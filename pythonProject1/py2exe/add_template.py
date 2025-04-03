@@ -222,7 +222,7 @@ if __name__ == "__main__":
     workbook = openpyxl.load_workbook(get_file(os.getcwd(),"Python-草稿"),data_only=True)
     worksheet = workbook["add_template"]
     print(worksheet.max_row)
-    cycle_times = 101 if worksheet.max_row > 101 else worksheet.max_row
+    # cycle_times = 101 if worksheet.max_row > 101 else worksheet.max_row
     # store_account = "jingqiadg@163.com"
     # category = "Clothing"
     # code_type = "EAN"
@@ -234,20 +234,36 @@ if __name__ == "__main__":
             # print(line.split(",")[1])
             # print(line.split(",")[2])
             # print(len(line.split(",")[2]))
-            store_account = line.split(",")[0]
-            category = line.split(",")[1]
-            code_type = line.split(",")[2].rstrip()
+            self_cycle_time = line.split(",")[0]
+            # print("self_cycle_time:"+self_cycle_time)
+            lb_column = line.split(",")[1]
+            # print("lb_column:"+lb_column)
+            sku_column = line.split(",")[2]
+            # print("sku_column:"+sku_column)
+            title_column = line.split(",")[3]
+            # print("title_column:"+title_column)
+            brand_column = line.split(",")[4]
+            # print("brand_column:"+brand_column)
+            store_account = line.split(",")[5]
+            # print("store_account:"+store_account)
+            category = line.split(",")[6]
+            # print("category:"+category)
+            code_type = line.split(",")[7].rstrip()
+            # print("code_type:"+code_type)
             # print(len(code_type))
+    # cycle_times = int(self_cycle_time) if self_cycle_time != "" else worksheet.max_row
+    cycle_times = int(self_cycle_time) if self_cycle_time else worksheet.max_row
+    print("cycle_times:"+str(cycle_times))
 
     for i in range(2,cycle_times+1):
         print(f"循环次数:{i-1}")
-        lb = worksheet[f"AN{i}"].value
-        sku = worksheet[f"A{i}"].value
-        title = worksheet[f"J{i}"].value
+        lb = worksheet[f"{lb_column}{i}"].value
+        sku = worksheet[f"{sku_column}{i}"].value
+        title = worksheet[f"{title_column}{i}"].value
         print(f"产品名称:{title}")
-        brand = worksheet[f"K{i}"].value
+        brand = worksheet[f"{brand_column}{i}"].value
         add_template_from_xlsx(lb,sku,title,brand,store_account,category,code_type)
-    """"""
+    """ """
 
 
 
