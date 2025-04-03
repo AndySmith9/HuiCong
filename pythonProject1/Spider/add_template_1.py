@@ -226,7 +226,7 @@ if __name__ == "__main__":
     # store_account = "jingqiadg@163.com"
     # category = "Clothing"
     # code_type = "EAN"
-    file = open("add_template.txt","r",encoding="UTF-8")
+    file = open("add_template_1.txt", "r", encoding="UTF-8")
     lines = file.readlines()
     for line in lines:
         if "#" not in line:

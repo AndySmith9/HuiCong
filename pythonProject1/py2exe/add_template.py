@@ -252,7 +252,7 @@ if __name__ == "__main__":
             # print("code_type:"+code_type)
             # print(len(code_type))
     # cycle_times = int(self_cycle_time) if self_cycle_time != "" else worksheet.max_row
-    cycle_times = int(self_cycle_time) if self_cycle_time else worksheet.max_row
+    cycle_times = int(self_cycle_time) + 1 if self_cycle_time else worksheet.max_row
     print("cycle_times:"+str(cycle_times))
 
     for i in range(2,cycle_times+1):

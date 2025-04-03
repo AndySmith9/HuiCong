@@ -1,2 +1,2 @@
-#循环次数(取值输入值减1.若为空,取max_row-1),lb所在列,sku所在列,产品标题所在列,品牌所在列,卖家账号,产品分类,编码类型
-10,AN,A,J,K,jingqiadg@163.com,Clothing,EAN
+#循环次数(若为空,取max_row-1),lb所在列,sku所在列,产品标题所在列,品牌所在列,卖家账号,产品分类,编码类型
+,AN,A,J,K,jingqiadg@163.com,Clothing,EAN
