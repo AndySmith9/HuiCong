@@ -1,0 +1,26 @@
+1.创建setup.py
+import sys
+from cx_Freeze import setup, Executable
+
+# 基础设置
+base = None
+if sys.platform == "win32":
+    pass
+    # base = "Win32GUI"  # 如果是 GUI 程序，使用这个设置；如果是命令行程序，将这行注释掉
+
+# 可执行文件设置
+executables = [
+    Executable("add_template.py", base=base)
+]
+
+# 打包设置
+setup(
+    name="add_template",
+    version="0.1",
+    description="读取xlsx商品数据,录入网页",
+    executables=executables
+)
+2.进入setup.py所在的文件夹,执行命令
+python setup.py build
+3.将add_template.py需要的xlsx文件和文本文件,复制到生成的exe文件所在的文件夹下
+add_template.txt,Python-草稿-4WXX20250328.xlsx
