@@ -9,7 +9,7 @@ if sys.platform == "win32":
 
 # 可执行文件设置
 executables = [
-    Executable("add_template.py", base=base)
+    Executable("add_template.py", base=base, icon="log-ico.ico")
 ]
 
 # 打包设置

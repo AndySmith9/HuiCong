@@ -265,7 +265,10 @@ if __name__ == "__main__":
         add_template_from_xlsx(lb,sku,title,brand,store_account,category,code_type)
     """ """
 
+"""
+Q1:ChromeDriver only supports characters in the BMP.从网页爬取的标题含有非BMP字符,无法将该标题通过chromedriver录入到谷歌浏览器打开的网页中
 
+"""
 
 
 """  
