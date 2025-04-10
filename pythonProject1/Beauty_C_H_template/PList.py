@@ -43,13 +43,13 @@ getEqualRowsList = open("getEqualRowsList.txt","r",encoding="UTF-8")
 for line1 in getEqualRowsList.readlines():
     if "#" not in line1:
         print(line1)
-        print(get_file_name(os.getcwd(), line1.split(",")[0]))
-        print(line1.split(",")[1])
-        print(get_file_name(os.getcwd(), line1.split(",")[2]))
-        print(line1.split(",")[3])
-        print("Python-" + get_file_name(os.getcwd(), line1.split(",")[2]))
-        print(int(line1.split(",")[4]))
-        get_xlsx_equal_rows_xlsx(get_file_name(os.getcwd(), line1.split(",")[0]), line1.split(",")[1], get_file_name(os.getcwd(), line1.split(",")[2]), line1.split(",")[3], "Python-" + get_file_name(os.getcwd(), line1.split(",")[2]), int(line1.split(",")[4]))
+        print(get_file_name(os.getcwd(), line1.split(";")[0]))
+        print(line1.split(";")[1])
+        print(get_file_name(os.getcwd(), line1.split(";")[2]))
+        print(line1.split(";")[3])
+        print("Python-" + get_file_name(os.getcwd(), line1.split(";")[2]))
+        print(int(line1.split(";")[4]))
+        get_xlsx_equal_rows_xlsx(get_file_name(os.getcwd(), line1.split(";")[0]), line1.split(";")[1], get_file_name(os.getcwd(), line1.split(";")[2]), line1.split(";")[3], "Python-" + get_file_name(os.getcwd(), line1.split(";")[2]), int(line1.split(";")[4]))
 getEqualRowsList.close()
 
 
@@ -58,14 +58,14 @@ readFile = open("PList.txt", "r", encoding="UTF-8")
 for line in readFile.readlines():
     if "#" not in line:
         print(line)
-        print(get_file_name(os.getcwd(), line.split(",")[0]))
-        print(line.split(",")[1])
-        print(line.split(",")[2])
-        print(get_file_name(os.getcwd(), line.split(",")[3]))
-        print(line.split(",")[4])
-        print(line.split(",")[5])
-        print(line.split(",")[6])
-        copy_xlsx_to_xlsx(get_file_name(os.getcwd(), line.split(",")[0]), line.split(",")[1], line.split(",")[2], get_file_name(os.getcwd(), line.split(",")[3]), line.split(",")[4], line.split(",")[5], int(line.split(",")[6]))
+        print(get_file_name(os.getcwd(), line.split(";")[0]))
+        print(line.split(";")[1])
+        print(line.split(";")[2])
+        print(get_file_name(os.getcwd(), line.split(";")[3]))
+        print(line.split(";")[4])
+        print(line.split(";")[5])
+        print(line.split(";")[6])
+        copy_xlsx_to_xlsx(get_file_name(os.getcwd(), line.split(";")[0]), line.split(";")[1], line.split(";")[2], get_file_name(os.getcwd(), line.split(";")[3]), line.split(";")[4], line.split(";")[5], int(line.split(";")[6]))
 readFile.close()
 
 
