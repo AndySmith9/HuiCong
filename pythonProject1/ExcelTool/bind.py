@@ -39,6 +39,7 @@ copy_xlsx_to_xlsx_column,E:\HuiCong\pythonProject1\ExcelTest\Python-草稿-2WXX2
 copy_xlsx_to_xlsx_column,E:\HuiCong\pythonProject1\ExcelTest\Python-草稿-2WXX20250207.xlsx,Sheet0,L,2,E:\HuiCong\pythonProject1\ExcelTest\product_bind_import_20250207.xlsx,Sheet1,B,3
 copy_xlsx_to_xlsx_column,E:\HuiCong\pythonProject1\ExcelTest\Python-草稿-2WXX20250207.xlsx,Sheet0,A,2,E:\HuiCong\pythonProject1\ExcelTest\product_bind_import_20250207.xlsx,Sheet1,B,4
 xlsx_write_value,E:\HuiCong\pythonProject1\ExcelTest\Python-草稿-2WXX20250207.xlsx,Sheet0,E:\HuiCong\pythonProject1\ExcelTest\product_bind_import_20250207.xlsx,Sheet1,C,4
+注意:Python-草稿-2WXX20250207.xlsx和product_bind_import_20250207.xlsx需要存在,product_bind_import_20250207.xlsx可以新建一个空的xlsx文件,然后改名
 """
 
 
