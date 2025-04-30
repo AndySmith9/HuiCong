@@ -14,7 +14,7 @@ for i in range(60):
     target_window.activate()
     print(target_window.title)
     pyautogui.press("end")
-    time.sleep(15)
+    time.sleep(5)
 
 
 

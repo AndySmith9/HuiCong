@@ -12,6 +12,7 @@ import openpyxl
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
 import sys
+import pyautogui
 
 
 def fetch_amazon_data(url):
@@ -142,6 +143,9 @@ def get_img_from_row(source_workbook,source_worksheet,row):
             # action.send_keys(Keys.ARROW_DOWN).perform()
             # time.sleep(3)
             # action.send_keys(Keys.ENTER).perform()
+            pyautogui.leftClick(990,778)
+
+
 
             break
 
