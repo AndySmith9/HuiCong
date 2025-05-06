@@ -1,4 +1,5 @@
 import time
+
 import pyautogui
 import pygetwindow
 
@@ -8,12 +9,12 @@ for title in window_titles:
     print(title)
 
 
-for i in range(120):
-    target_window = pygetwindow.getWindowsWithTitle("jishunzen1@163.com")[0]
+for i in range(80):
+    target_window = pygetwindow.getWindowsWithTitle("jingqiadg@163.com")[0]
     target_window.activate()
     print(target_window.title)
     pyautogui.press("end")
-    time.sleep(8)
+    time.sleep(10)
 
 
 

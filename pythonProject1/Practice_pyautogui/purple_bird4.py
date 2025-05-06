@@ -9,12 +9,12 @@ for title in window_titles:
     print(title)
 
 
-for i in range(60):
+for i in range(120):
     target_window = pygetwindow.getWindowsWithTitle("ruixingshang1955@163.com")[0]
     target_window.activate()
     print(target_window.title)
     pyautogui.press("end")
-    time.sleep(5)
+    time.sleep(8)
 
 
 
