@@ -1,4 +1,4 @@
-copy_xlsx_to_xlsx_column,E:\HuiCong\pythonProject1\ExcelTest\Python-²Ý¸å-2WXX20250207.xlsx,Sheet0,F,2,E:\HuiCong\pythonProject1\ExcelTest\product_bind_import_20250207.xlsx,Sheet1,A,3
-copy_xlsx_to_xlsx_column,E:\HuiCong\pythonProject1\ExcelTest\Python-²Ý¸å-2WXX20250207.xlsx,Sheet0,L,2,E:\HuiCong\pythonProject1\ExcelTest\product_bind_import_20250207.xlsx,Sheet1,B,3
-copy_xlsx_to_xlsx_column,E:\HuiCong\pythonProject1\ExcelTest\Python-²Ý¸å-2WXX20250207.xlsx,Sheet0,A,2,E:\HuiCong\pythonProject1\ExcelTest\product_bind_import_20250207.xlsx,Sheet1,B,4
-xlsx_write_value,E:\HuiCong\pythonProject1\ExcelTest\Python-²Ý¸å-2WXX20250207.xlsx,Sheet0,E:\HuiCong\pythonProject1\ExcelTest\product_bind_import_20250207.xlsx,Sheet1,C,4
+copy_xlsx_to_xlsx_column,E:\HuiCong\pythonProject1\ExcelTest\Python-²Ý¸å-4WXX20250510.xlsx,Sheet0,F,7,E:\HuiCong\pythonProject1\ExcelTest\product_bind_import_20250207.xlsx,Sheet1,A,3
+copy_xlsx_to_xlsx_column,E:\HuiCong\pythonProject1\ExcelTest\Python-²Ý¸å-4WXX20250510.xlsx,Sheet0,L,7,E:\HuiCong\pythonProject1\ExcelTest\product_bind_import_20250207.xlsx,Sheet1,B,3
+copy_xlsx_to_xlsx_column,E:\HuiCong\pythonProject1\ExcelTest\Python-²Ý¸å-4WXX20250510.xlsx,Sheet0,A,7,E:\HuiCong\pythonProject1\ExcelTest\product_bind_import_20250207.xlsx,Sheet1,B,4
+xlsx_write_value,E:\HuiCong\pythonProject1\ExcelTest\Python-²Ý¸å-4WXX20250510.xlsx,Sheet0,7,E:\HuiCong\pythonProject1\ExcelTest\product_bind_import_20250207.xlsx,Sheet1,C,4,2

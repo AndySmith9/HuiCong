@@ -8,7 +8,7 @@ window_titles = pygetwindow.getAllTitles()
 for title in window_titles:
     print(title)
 
-file = open("purple_bird.txt","r",encoding="UTF-8")
+file = open("purple_bird_end.txt","r",encoding="UTF-8")
 lines = file.readlines()
 for line in lines:
     if "#" not in line:
