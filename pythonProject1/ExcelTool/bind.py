@@ -35,10 +35,12 @@ def xlsx_write_value(source_workbook_name,source_worksheet_name,source_row,targe
 
 """
 配置文件格式:
-copy_xlsx_to_xlsx_column,E:\HuiCong\pythonProject1\ExcelTest\Python-草稿-2WXX20250207.xlsx,Sheet0,F,2,E:\HuiCong\pythonProject1\ExcelTest\product_bind_import_20250207.xlsx,Sheet1,A,3
-copy_xlsx_to_xlsx_column,E:\HuiCong\pythonProject1\ExcelTest\Python-草稿-2WXX20250207.xlsx,Sheet0,L,2,E:\HuiCong\pythonProject1\ExcelTest\product_bind_import_20250207.xlsx,Sheet1,B,3
-copy_xlsx_to_xlsx_column,E:\HuiCong\pythonProject1\ExcelTest\Python-草稿-2WXX20250207.xlsx,Sheet0,A,2,E:\HuiCong\pythonProject1\ExcelTest\product_bind_import_20250207.xlsx,Sheet1,B,4
-xlsx_write_value,E:\HuiCong\pythonProject1\ExcelTest\Python-草稿-2WXX20250207.xlsx,Sheet0,E:\HuiCong\pythonProject1\ExcelTest\product_bind_import_20250207.xlsx,Sheet1,C,4
+#操作区分符,source_workbook_name,source_worksheet_name,source_column,source_row,target_workbook_name,target_worksheet_name,target_column,target_row
+copy_xlsx_to_xlsx_column,E:\HuiCong\pythonProject1\ExcelTest\Python-草稿-4WXX20250510.xlsx,Sheet0,F,7,E:\HuiCong\pythonProject1\ExcelTest\product_bind_import_20250207.xlsx,Sheet1,A,3
+copy_xlsx_to_xlsx_column,E:\HuiCong\pythonProject1\ExcelTest\Python-草稿-4WXX20250510.xlsx,Sheet0,L,7,E:\HuiCong\pythonProject1\ExcelTest\product_bind_import_20250207.xlsx,Sheet1,B,3
+copy_xlsx_to_xlsx_column,E:\HuiCong\pythonProject1\ExcelTest\Python-草稿-4WXX20250510.xlsx,Sheet0,A,7,E:\HuiCong\pythonProject1\ExcelTest\product_bind_import_20250207.xlsx,Sheet1,B,4
+#操作区分符,source_workbook_name,source_worksheet_name,source_row,target_workbook_name,target_worksheet_name,target_column,target_row,bind_number
+xlsx_write_value,E:\HuiCong\pythonProject1\ExcelTest\Python-草稿-4WXX20250510.xlsx,Sheet0,7,E:\HuiCong\pythonProject1\ExcelTest\product_bind_import_20250207.xlsx,Sheet1,C,4,2
 注意:Python-草稿-2WXX20250207.xlsx和product_bind_import_20250207.xlsx需要存在,product_bind_import_20250207.xlsx可以新建一个空的xlsx文件,然后改名
 """
 
