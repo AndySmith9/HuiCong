@@ -57,4 +57,4 @@ Python-草稿,Children,L,Python-上架表,Tools & Hardware Other,BI,7
 #自定义父SKU - Variant Group ID
 Python-草稿,Children,G,Python-上架表,Tools & Hardware Other,BL,7
 #代理链接100*100缩率图(Formula) - Swatch Image URL
-Python-草稿,Children,BK,Python-上架表,Tools & Hardware Other,BP,7
+Python-草稿,Children,BK,Python-上架表,Tools & Hardware Other,BQ,7
